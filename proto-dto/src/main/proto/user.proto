@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.remcarpediem.feignprotobuf.proto.dto";
+
+package com.remcarpediem.feignprotobuf.proto.dto;
+message RegisterForm {
+    string name = 1;
+    string password = 2;
+    string email = 3;
+    string desc = 4;
+}
+
+message UserDTO {
+    int32 id = 1;
+    string name = 2;
+    string url = 3;
+}
+
